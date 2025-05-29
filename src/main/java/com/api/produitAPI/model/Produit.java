@@ -1,16 +1,14 @@
-package com.api.produitAPI.modele;
+package com.api.produitAPI.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name="produit")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
-public class produit {
+public class Produit {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private Long id;
@@ -19,14 +17,5 @@ public class produit {
     @Column(length = 150)
     private String description;
     private Integer prix;
-
-
-    public void setPrix(Integer prix) {
-        this.prix = prix;
-    }
-
-    public Integer getPrix() {
-        return prix;
-    }
 
 }
