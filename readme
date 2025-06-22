@@ -1,0 +1,32 @@
+     ProduitAPI
+     API REST CRUD pour gérer des produits.
+
+     Fonctionnalités
+     Création, lecture, mise à jour et suppression (CRUD) de produits.
+
+     Documentation automatique avec Swagger.
+
+     Tests unitaires et tests d’intégration complets.
+
+     Installation et lancement
+     Cloner le dépôt
+
+
+     Lancer l’application avec Maven
+
+     mvn spring-boot:run
+
+
+     Utilisation
+     Accéder à l’interface Swagger UI pour explorer et tester l’API :
+
+     http://localhost:8081/swagger-ui/index.html
+
+     Tests
+     Tests unitaires des contrôleurs avec @WebMvcTest.
+
+     Tests d’intégration avec base de données en mémoire.
+
+
+Pour lancer les tests :
+mvn test

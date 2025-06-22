@@ -3,7 +3,6 @@ package com.api.produitAPI.controller;
 
 import com.api.produitAPI.DTO.ProduitDTO;
 import com.api.produitAPI.DTO.ProduitMapper;
-
 import com.api.produitAPI.service.ProduitService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +52,7 @@ public class ProduitController {
     }
 
     @GetMapping("/{id}")
-    ResponseEntity<ProduitDTO>afficherproduit(Long id){
+    ResponseEntity<ProduitDTO>afficherproduit(@Valid @PathVariable Long id){
         return ResponseEntity.ok(produitservice.informationProduit(id));
     }
 
